@@ -48,7 +48,7 @@ func FangTheme(darkFunc lipgloss.LightDarkFunc) fang.ColorScheme {
 		orange,
 	}
 
-	theme.Command = darkFunc(orange, orange)
-
+	theme.Command = darkFunc(lipgloss.Color("#02BA84"), lipgloss.Color("#02BF87"))
+	theme.Flag = darkFunc(orange, orange)
 	return theme
 }
